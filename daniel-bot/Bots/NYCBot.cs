@@ -62,7 +62,7 @@ namespace Bots
 
                     sb.AppendLine($"{Greeting()}")
                         .AppendLine("My name is Daniel.")
-                        .AppendLine("I can look up any Parking and Camera Violations tickets in NYC for you.")
+                        .AppendLine("I can look up any NYC Parking and Camera Violations ticket for you.")
                         .AppendLine("Are you ready to begin?");
                     await turnContext.SendActivityAsync(MessageFactory.Text(sb.ToString()), cancellationToken);
                 }
@@ -95,7 +95,7 @@ namespace Bots
                 case ConversationFlow.Question.None:
                     if (input.ToLower() == "yes")
                     {
-                        await turnContext.SendActivityAsync("What is the license plate you want me to look up?", null, null, cancellationToken);
+                        await turnContext.SendActivityAsync("Great! What is the license plate you want me to look up?", null, null, cancellationToken);
                         flow.LastQuestionAsked = ConversationFlow.Question.Plate;
                     }
                     else if (input.ToLower() == "no")
