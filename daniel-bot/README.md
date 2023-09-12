@@ -1,8 +1,6 @@
 ﻿# daniel_bot
 
-Bot Framework v4 empty bot sample.
-
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows the minimum code required to build a bot.
+Chat Bot that will lookup plate and camera violations in NYC.
 
 ## Prerequisites
 

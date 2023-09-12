@@ -4,9 +4,7 @@
     {
         public enum Question
         {
-            Name,
-            Age,
-            Date,
+            Plate,
             None
         }
 
